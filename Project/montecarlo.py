@@ -4,6 +4,18 @@ import unittest
 
 class Die:
     def __init__(self, faces_array):
+        '''
+    PURPOSE: initialize die objects
+    
+    INPUTS
+    faces_array   a list of strings or ints
+    
+    OUTPUT
+    no return value
+    attributes include faces_array, weights, weight_face
+    
+        '''
+        
         self.faces_array = faces_array
         if not isinstance(self.faces_array[0], (int, str)):
             raise TypeError("Only integers or string are allowed")
@@ -68,6 +80,18 @@ class Game:
 
     '''
     def __init__(self, die_list):
+        '''
+    PURPOSE: create game objects from a list of dice
+    
+    INPUTS
+    die_list    list of die objects
+    
+    OUTPUT
+    no return
+    attributes include die_list
+
+        '''
+        
         self.die_list = die_list
         if not isinstance(self.die_list[0], (Die)):
             raise TypeError("Only die objects are allowed")
@@ -117,6 +141,17 @@ class Analyzer:
     '''
     combo = pd.DataFrame([])
     def __init__(self, game_object):
+        '''
+    PURPOSE: initialize the game object
+    
+    INPUTS
+    game_object
+    
+    OUTPUT
+    no return
+    attributes include game_object
+    '''
+        
         self.game_object = game_object
 
     def jackpot(self):
