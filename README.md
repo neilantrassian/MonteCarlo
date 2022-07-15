@@ -191,4 +191,8 @@ analysis.jackpot()
     '''
     
 # Manifest
+<<<<<<< HEAD
 LICENSE, Project, README.md, setup.py
+=======
+LICENSE, Project, README.md, setup.py
+>>>>>>> a5535c6f40039bcd2a77e4d8c95a419b6053a91b
